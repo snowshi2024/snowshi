@@ -12294,4 +12294,29 @@ html {
     font-display: swap;
   }
 
-  
+  body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0; /* Optional: add a background color */
+}
+
+iframe {
+    max-width: 90%; /* 최대 너비를 90%로 설정 */
+    width: 100%; /* 너비를 100%로 설정 */
+    border-radius: 30px; /* 모서리를 둥글게 만듭니다. */
+}
+
+/* 모바일 화면에 대한 미디어 쿼리 */
+@media (max-width: 768px) {
+    iframe {
+        height: 60vh; /* 모바일에서 더 작은 높이로 설정 */
+    }
+}
