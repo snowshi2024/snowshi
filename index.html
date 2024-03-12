@@ -239,6 +239,69 @@
                 </div>
 
 
+
+
+
+                <style>
+                    .banner-container {
+                      display: flex;
+                      justify-content: space-between;
+                      padding: 20px;
+                      gap: 20px;
+                      flex-wrap: wrap;
+                      max-width: 800px; /* 적당한 최대 너비 설정 */
+                      margin: 0 auto; /* 가운데 정렬 */
+                      position: relative; /* 배너 컨테이너에 대한 상대적인 위치 설정 */
+                    }
+                    
+                    .banner-item {
+                      width: calc(33.33% - 20px); /* 각 배너 아이템의 너비 설정 */
+                      border-radius: 15px; /* 모서리를 둥글게 만듭니다. */
+                      overflow: hidden; /* 내용이 넘치는 경우를 방지합니다. */
+                      box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3); /* 그림자 효과를 추가합니다. */
+                    }
+                  
+                    .banner-item img {
+                      width: 100%;
+                      height: auto;
+                      display: block;
+                    }
+                  
+                  
+                    @media screen and (max-width: 768px) {
+                      .banner-item {
+                        width: calc(50% - 20px); /* 태블릿에서는 두 개씩 배치됩니다. */
+                      }
+                    }
+                  
+                    @media screen and (max-width: 480px) {
+                      .banner-item {
+                        width: 100%; /* 모바일에서는 한 개씩 배치됩니다. */
+                      }
+                    }
+
+                  </style>
+                  </head>
+                  <body>
+                  
+                  <div class="banner-container">
+                    <div class="banner-item">
+                      <img src="https://ifh.cc/g/TQq1vg.png" alt="NV호스팅">
+                    </div>
+                    <div class="banner-item">
+                      <img src="https://via.placeholder.com/400x200" alt="모집중">
+                    </div>
+                    <div class="banner-item">
+                      <img src="https://via.placeholder.com/400x200" alt="모집중">
+                    </div>
+                  </div>
+                  
+                  </body>
+                  </html>
+
+
+
+                
                 
                 <footer class="footer-wrapper">
                     <div class="container-default w-container">
@@ -268,11 +331,6 @@
                                     <div class="text-400 medium footer-title">스노우시</div>
                                     <div class="footer-lists-wrapper">
                                         <ul role="list" class="footer-list-wrapper">
-                                            <li class="footer-list-item">
-                                                <a href="https://snowshi.com" class="footer-link">스노우시 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
-                                                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
-                                                  </svg></a>
-                                            </li>
                                             <li class="footer-list-item">
                                                 <a href="https://marpple.shop/kr/snowshi" class="footer-link">굿즈샵 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
                                                     <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>

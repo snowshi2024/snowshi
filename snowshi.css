@@ -12294,7 +12294,7 @@ html {
     font-display: swap;
   }
 
-   body, html {
+  body, html {
     margin: 0;
     padding: 0;
     height: 100%;
@@ -12320,3 +12320,5 @@ iframe {
         height: 60vh; /* 모바일에서 더 작은 높이로 설정 */
     }
 }
+
+
