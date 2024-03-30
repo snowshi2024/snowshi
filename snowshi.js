@@ -577,3 +577,55 @@ Webflow.require('ix2').init(
 ChannelIO('boot', {
   "pluginKey": "31cb2c57-4f51-4239-a9cd-d80d2a98a1a5"
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+  var toggleButton = document.querySelector('.toggle-menu');
+  var menuDropdown = document.querySelector('.menu-dropdown');
+
+  toggleButton.addEventListener('click', function () {
+      menuDropdown.classList.toggle('active');
+  });
+});
+
+
+function updateTime() {
+  var now = new Date();
+  var year = now.getFullYear();
+  var month = ('0' + (now.getMonth() + 1)).slice(-2);
+  var day = ('0' + now.getDate()).slice(-2);
+  var hour = ('0' + now.getHours()).slice(-2);
+  var minute = ('0' + now.getMinutes()).slice(-2);
+  var second = ('0' + now.getSeconds()).slice(-2);
+  var meridiem = hour < 12 ? '오전' : '오후';
+  
+  // 12시간제로 변환
+  hour = hour % 12;
+  hour = hour ? hour : 12;
+  
+  var timeString = year + '년 ' + month + '월 ' + day + '일 ' + meridiem + ' ' + hour + '시 ' + minute + '분 ' + second + '초 ⏰';
+  document.getElementById('kst-time').textContent = timeString;
+}
+
+updateTime(); // 페이지가 로드될 때 초기 시간을 표시
+
+// 1초마다 시간을 업데이트
+setInterval(updateTime, 1000);
+
+// Language Dropdown JavaScript
+document.addEventListener('DOMContentLoaded', function() {
+    var dropdownToggle = document.querySelector('.language-dropdown-toggle');
+    var dropdownMenu = document.querySelector('.language-dropdown-menu');
+
+    dropdownToggle.addEventListener('click', function() {
+        dropdownMenu.classList.toggle('active');
+    });
+
+    // Close the dropdown when clicking outside of it
+    window.addEventListener('click', function(event) {
+        if (!dropdownToggle.contains(event.target) && !dropdownMenu.contains(event.target)) {
+            dropdownMenu.classList.remove('active');
+        }
+    });
+});
+
+
