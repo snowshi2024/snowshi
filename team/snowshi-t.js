@@ -577,3 +577,12 @@ Webflow.require('ix2').init(
 ChannelIO('boot', {
   "pluginKey": "31cb2c57-4f51-4239-a9cd-d80d2a98a1a5"
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+  var toggleButton = document.querySelector('.toggle-menu');
+  var menuDropdown = document.querySelector('.menu-dropdown');
+
+  toggleButton.addEventListener('click', function () {
+      menuDropdown.classList.toggle('active');
+  });
+});
