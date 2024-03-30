@@ -1,0 +1,42 @@
+@font-face {
+    font-family: 'WAGURITTF';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2403@1.0/WAGURITTF.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: WAGURITTF;
+    background-image: url('https://ifh.cc/g/8sC6mn.png'); /* 이미지 경로 설정 */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .countdown {
+    font-size: 70px;
+    color: #000000;
+    text-align: center;
+    margin-bottom: -50px;
+  }
+  
+  .button {
+    padding: 15px 30px;
+    border-radius: 20px;
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 18px;
+    text-decoration: none;
+    margin-top: 170px; /* 버튼을 20px 아래로 이동 */
+}
+  
+  .button:hover {
+    background-color: #ccc;
+  }
