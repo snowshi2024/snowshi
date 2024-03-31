@@ -6398,6 +6398,32 @@ footer {
     }
 }
 
+/* 모서리 둥근 사각형 */
+.footer-banners {
+  background-color: #fff; /* 배경색 설정 */
+  border-radius: 10px; /* 모서리 둥글게 */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* 그림자 효과 추가 */
+  padding: 10px; /* 내부 요소와의 여백 설정 */
+}
+
+
+
+.footer-banners-container {
+  position: relative; /* 상대 위치 설정 */
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: -75px;
+}
+
+
+
+
+
+
+
+
+
 
 .header {
   background-color: #575757;
