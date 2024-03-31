@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>스노우시 안전 배너</title>
+<link href="snowshi-safety.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div class="banner">
+  <div class="logo">
+    <img src="https://ifh.cc/g/ZAkVkc.png" alt="로고">
+  </div>
+  <div class="info">
+    <p><span>실시간 날짜:</span> <span id="realtime-date"></span></p>
+    <p><span>인증 날짜:</span> <span id="auth-date"></span></p>
+    <p><span>만료 날짜:</span> <span id="expire-date"></span></p>
+    <p><span>인증 토큰:</span> <span id="auth-token"></span></p>
+    <p><span>인증 이름:</span> <span id="auth-name"></span></p>
+  </div>
+  <div class="timestamp">KST 기준</div>
+</div>
+
+
+<script>
+    function updateTime() {
+      var now = new Date();
+      var options = { year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit', second: '2-digit', timeZone: 'Asia/Seoul' };
+      var kstTime = now.toLocaleString('ko-KR', options);
+      document.getElementById('realtime-date').textContent = kstTime;
+      var authDate = new Date(2024, 2, 31);
+      var expireDate = new Date(2024, 6, 31);
+      document.getElementById('auth-date').textContent = authDate.toLocaleDateString('ko-KR');
+      document.getElementById('expire-date').textContent = expireDate.toLocaleDateString('ko-KR');
+      document.getElementById('auth-token').textContent = "S0210-SONG-*****";
+      document.getElementById('auth-name').textContent = "스노우시";
+    }
+    
+    updateTime();
+    setInterval(updateTime, 1000);
+  </script>
+  
+</body>
+</html>
