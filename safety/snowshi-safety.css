@@ -41,3 +41,81 @@ body {
   font-size: 12px;
   color: #666;
 }
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+footer {
+  background-color: #c8ced1;
+  color: #000000;
+  padding: 20px 10px; /* 상하 20px, 좌우 10px 여백 설정 */
+  text-align: center;
+  margin-top: 100px; /* 푸터 위 여백 설정 */
+  border-radius: 13px; /* 모서리 둥글게 */
+}
+
+.footer-content {
+  max-width: 800px;
+  margin: 0 auto;
+  font-family: GmarketSansMedium;
+}
+
+.footer-content p {
+  margin: 10px 0; /* 텍스트 크기 키우기 */
+  font-size: 16px; /* 텍스트 크기 키우기 */
+  font-family: GmarketSansMedium; 
+}
+
+.footer-content a {
+  color: #000000;
+  text-decoration: none;
+  font-weight: normal; /* 텍스트의 기본 굵기로 설정 */
+}
+
+.footer-content a:hover {
+  text-decoration: underline;
+}
+
+/* 모바일 화면에서 푸터 스타일 수정 */
+@media only screen and (max-width: 600px) {
+  footer {
+      padding: 20px 5px; /* 모바일 화면에서 좁은 여백으로 조정 */
+  }
+
+  .footer-content p {
+      font-size: 14px; /* 모바일 화면에서 텍스트 크기 조정 */
+  }
+}
+
+/* 모서리 둥근 사각형 */
+.footer-banners {
+background-color: #fff; /* 배경색 설정 */
+border-radius: 10px; /* 모서리 둥글게 */
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* 그림자 효과 추가 */
+padding: 10px; /* 내부 요소와의 여백 설정 */
+}
+
+
+
+.footer-banners-container {
+position: relative; /* 상대 위치 설정 */
+display: flex;
+justify-content: flex-end;
+align-items: center;
+margin-top: -75px;
+}
+
+/* 모바일 화면에서 푸터 배너 스타일 조정 */
+@media only screen and (max-width: 600px) {
+.footer-banners-container {
+    margin-top: 0; /* 기본 푸터 배너와 겹치지 않도록 여백 제거 */
+    flex-direction: column; /* 세로 방향으로 배너 정렬 */
+    align-items: center; /* 가운데 정렬 */
+}
+
+.footer-banners {
+    margin-top: 20px; /* 배너들 간 간격 추가 */
+}
+}
