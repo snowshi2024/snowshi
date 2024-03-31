@@ -6416,16 +6416,9 @@ footer {
   margin-top: -75px;
 }
 
-/* 모바일 화면에서 푸터 배너 스타일 조정 */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1000px) {
   .footer-banners-container {
-      margin-top: 0; /* 기본 푸터 배너와 겹치지 않도록 여백 제거 */
-      flex-direction: column; /* 세로 방향으로 배너 정렬 */
-      align-items: center; /* 가운데 정렬 */
-  }
-
-  .footer-banners {
-      margin-top: 20px; /* 배너들 간 간격 추가 */
+      display: none;
   }
 }
 
