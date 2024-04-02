@@ -628,19 +628,3 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-
-
-    document.addEventListener("DOMContentLoaded", function() {
-        // 헤더 제목 요소를 가져옵니다.
-        var headerTitle = document.querySelector('.header-title');
-        
-        // 헤더 제목을 클릭했을 때 실행할 함수를 정의합니다.
-        function goToLink() {
-            // 이동할 링크 주소를 설정합니다.
-            var link = "https://snowshi.com"; // 여기에 실제로 이동할 링크 주소를 입력합니다.
-        }
-        
-        // 헤더 제목에 클릭 이벤트 리스너를 추가하여 함수를 실행합니다.
-        headerTitle.addEventListener('click', goToLink);
-    });
-
