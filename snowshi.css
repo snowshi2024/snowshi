@@ -2237,14 +2237,14 @@ figcaption {
 }
 
 .button.purple {
-  color: #000;
-  background-color: #63d3ff;
+  color: #ffffff;
+  background-color: #5b627d;
   padding: 16px 32px;
   font-size: 15px;
 }
 
 .button.purple:hover {
-  background-color: #662cc5;
+  background-color: #98a1c4;
 }
 
 .button.black {
