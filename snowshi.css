@@ -1,7 +1,7 @@
 html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
-  font-family: WavvePADO-Regular;
+  font-family: Freesentation-9Black;
 }
 
 body {
@@ -97,7 +97,7 @@ pre {
 }
 
 code, kbd, pre, samp {
-  font-family: WavvePADO-Regular;
+  font-family: Freesentation-9Black;
   font-size: 1em;
 }
 
@@ -179,9 +179,9 @@ td, th {
 }
 
 @font-face {
-  font-family: 'WavvePADO-Regular';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2404@1.0/WavvePADO-Regular.woff2') format('woff2');
-  font-weight: normal;
+  font-family: 'Freesentation-9Black';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2404@1.0/Freesentation-9Black.woff2') format('woff2');
+  font-weight: 900;
   font-style: normal;
 }
 
@@ -194,7 +194,7 @@ td, th {
   font-style: normal;
   font-weight: normal;
   line-height: 1;
-  font-family: WavvePADO-Regular;
+  font-family: Freesentation-9Black;
 }
 
 .w-icon-slider-right:before {
@@ -234,7 +234,7 @@ body {
   color: #333;
   background-color: #fff;
   margin: 0;
-  font-family: WavvePADO-Regular;
+  font-family: Freesentation-9Black;
   font-size: 14px;
   line-height: 20px;
 }
@@ -1055,7 +1055,7 @@ textarea.w-input, textarea.w-select {
 .w-widget-twitter-count-shim .w-widget-twitter-count-inner {
   text-align: center;
   color: #999;
-  font-family: WavvePADO-Regular;
+  font-family: Freesentation-9Black;
   font-size: 15px;
   line-height: 12px;
   position: relative;
@@ -1454,7 +1454,7 @@ textarea.w-input, textarea.w-select {
   -webkit-tap-highlight-color: transparent;
   background: rgba(0, 0, 0, .9);
   outline: 0;
-  font-family: WavvePADO-Regular;
+  font-family: Freesentation-9Black;
   font-size: 17px;
   font-style: normal;
   font-weight: 300;
@@ -2098,7 +2098,7 @@ textarea.w-input, textarea.w-select {
 
 body {
   color: #000;
-  font-family: WavvePADO-Regular;
+  font-family: Freesentation-9Black;
   font-size: 14px;
   line-height: 1.1;
 }
@@ -4481,7 +4481,7 @@ figcaption {
   background-color: #fff;
   border-radius: 13px;
   padding: 28px;
-  font-family: WavvePADO-Regular;
+  font-family: Freesentation-9Black;
   font-size: 16px;
   font-weight: 600;
   box-shadow: 0 0 20px rgba(0, 0, 0, .05);
@@ -6709,7 +6709,7 @@ figcaption {
 
 
 body {
-  font-family: WavvePADO-Regular;
+  font-family: Freesentation-9Black;
 }
 .footer {
   background-color: #f9f9f9;
