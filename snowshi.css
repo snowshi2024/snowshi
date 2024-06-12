@@ -178,6 +178,8 @@ td, th {
   padding: 0;
 }
 
+
+
 @font-face {
   font-family: 'Freesentation-9Black';
   src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2404@1.0/Freesentation-9Black.woff2') format('woff2');
@@ -6750,4 +6752,121 @@ body {
 .footer .certificates img {
   width: 40px;
   margin: 0 5px;
+}
+
+
+
+
+
+
+.container1 {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  gap: 20px; /* Add some gap between info and timeline */
+}
+
+.info2 {
+  width: 40%;
+  padding: 20px;
+}
+
+.info2 p {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+}
+
+.stats {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Add some gap between stats */
+}
+
+.stat .label {
+  font-size: 1rem;
+  color: #888;
+  margin-bottom: 10px;
+}
+
+.stat .value {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.timeline {
+  width: 60%;
+  padding: 20px;
+  position: relative;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 20px;
+  width: 2px;
+  height: 100%;
+  background: #ccc;
+}
+
+.event {
+  margin-bottom: 40px;
+  position: relative;
+  padding-left: 40px;
+}
+
+.event-date {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.event-details ul {
+  list-style: none;
+  padding-left: 20px;
+  margin: 0;
+}
+
+.event-details li {
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+
+.event::before {
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: 14px;
+  width: 12px;
+  height: 12px;
+  background: #5B627D;
+  border-radius: 50%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container1 {
+      flex-direction: column;
+      gap: 40px; /* Adjust the gap for mobile view */
+  }
+
+  .info2, .timeline {
+      width: 100%;
+      padding: 10px; /* Adjust padding for mobile view */
+  }
+
+  .timeline::before {
+      left: 10px; /* Adjust the position of the vertical line for mobile view */
+  }
+
+  .event {
+      padding-left: 30px; /* Adjust padding for events in mobile view */
+  }
+
+  .event::before {
+      left: 4px; /* Adjust the position of the red dot for mobile view */
+  }
 }
