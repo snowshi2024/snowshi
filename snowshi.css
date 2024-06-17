@@ -6870,3 +6870,23 @@ body {
       left: 4px; /* Adjust the position of the red dot for mobile view */
   }
 }
+.banner-container {
+  width: 100%;
+  max-width: 1310px;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 15px; /* 모서리를 둥글게 */
+}
+
+.banner {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 15px; /* 모서리를 둥글게 */
+}
+
+@media (max-width: 768px) {
+  .banner-container {
+      display: none; /* 모바일에서 배너 숨기기 */
+  }
+}
